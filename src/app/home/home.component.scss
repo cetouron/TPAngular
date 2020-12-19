@@ -1,0 +1,86 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto; 
+    transform: rotate(3deg)
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 50% auto; 
+    transform: rotate(-3deg)
+}
+
+
+.col {
+    padding: .4em 1.3em;
+}
+
+.color-dark {
+    background: #2885C4;
+}
+.color-light {
+    background: #57B3F1,
+}
+
+input.txt{
+    border: 0;
+    padding: 1em;
+    width: 80%;
+    margin-bottom: 2em;
+}
+
+input.btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    cursor: pointer;
+}
+
+.btn{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    transition-property: background;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.btn:focus{
+
+    background: rgb(88, 238, 88);
+
+}
+
+.btn.btnok{
+    border: 0;
+    display: block;
+    padding: 1em 3em;
+    background: rgba(230, 35, 10, 0.726);
+    color: rgb(229, 239, 247); 
+    margin-bottom: 1em;
+    transform : scale(2) translateX(1px);
+    transition-property: background-color padding;
+    transition-duration: 3s;
+    cursor: pointer;
+}
+
+.btn:hover{
+
+    background: green;
+
+}
+
+
+.life-container{
+    background: #3FA0E1;
+    padding: .5em;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+

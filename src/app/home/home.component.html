@@ -1,0 +1,31 @@
+
+
+<div class="container color-dark">
+  
+    <div class="col">
+        <p>Un élément de la liste</p>
+    </div>
+  
+    <div class="col">
+        <p>Ma liste d'élements ({{nbItem}})</p>
+    </div>
+</div>
+
+<div class="container2 color-light">
+  
+    <div class="col">
+        <p class="sm">
+            Rajouter un élément de la liste
+            <input type="text" class="form−control" [(ngModel)]="objectifText">
+            <br>
+            <div class="text-success">{{getCom()}}</div>
+            <button [ngStyle]="{background: getColor(), 'btnok': !getClass()}"class="btn btn-success" (click)="ajoutItem()">{{btnText}}</button>
+    </div>
+
+    <div class="container2 color−light" [@animobjectifs]="objectifs.length">
+    <div class="col">
+        <p class="life-container" *ngFor="let items of objectifs">
+            {{items}}
+        </p>
+    </div>
+</div>
